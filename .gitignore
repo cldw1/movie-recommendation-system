@@ -1,87 +1,37 @@
-# ==============================
-# Python
-# ==============================
-
+# Python / virtual environments
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-
-
-# ==============================
-# Virtual environment
-# ==============================
-
 .venv/
 venv/
 env/
 
-
-# ==============================
-# PyCharm / IDE
-# ==============================
-
+# IDEs, notebooks, operating-system files
 .idea/
 .vscode/
-
-
-# ==============================
-# Jupyter
-# ==============================
-
 .ipynb_checkpoints/
-
-
-# ==============================
-# Operating system
-# ==============================
-
 .DS_Store
 Thumbs.db
 
-
-# ==============================
-# Logs / cache
-# ==============================
-
+# Caches, logs, temporary and packaging artifacts
 *.log
 .cache/
-
-
-# ==============================
-# Temporary files
-# ==============================
-
+.edge-profile/
 *.tmp
 *.temp
 ~$*
-
-
-# ==============================
-# Python packaging
-# ==============================
-
 build/
 dist/
 *.egg-info/
 
+# Generated data: version only the small artifact needed to run the demo.
+data/processed/*
+!data/processed/train_ratings.csv
 
-# ==============================
-# Project generated data
-# ==============================
-
-data/processed/
-
-
-# ==============================
-# Generated models
-# ==============================
-
+# Generated models: version only the final model used by the demo.
 models/*.pkl
+!models/rank_model_ltr.pkl
 
-
-# ==============================
-# Generated results
-# ==============================
-
+# Generated evaluation tables are reproducible and are not versioned.
 results/*.csv
